@@ -1,4 +1,4 @@
-# opencode-webfetchmd
+# @san-kit/opencode-webfetchmd
 
 A web-page reader for OpenCode V2. It fetches a URL through the
 [Zyte](https://www.zyte.com/) Extract API, extracts the main content, and
@@ -16,7 +16,7 @@ stores the credential securely; the plugin does not write it to disk.
 ## Install
 
 ```sh
-opencode plugin add opencode-webfetchmd
+opencode plugin add @san-kit/opencode-webfetchmd
 ```
 
 Or add it to `opencode.jsonc`:
@@ -24,7 +24,7 @@ Or add it to `opencode.jsonc`:
 ```jsonc
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugins": ["opencode-webfetchmd"],
+  "plugins": ["@san-kit/opencode-webfetchmd"],
 }
 ```
 
@@ -33,8 +33,8 @@ Or add it to `opencode.jsonc`:
 `opencode plugin add ...` installs the plugin **globally**, so it is available
 in every project. To scope it to one project, add the package to that project's
 `opencode.json(c)` under `plugins` instead. A project can also disable a
-globally installed plugin with `"-opencode-webfetchmd"` in its `plugins`
-array.
+globally installed plugin with `"-opencode-webfetchmd"` (the plugin ID) in its
+`plugins` array.
 
 ### Where files live
 
@@ -159,7 +159,7 @@ or with a plugin option:
   "$schema": "https://opencode.ai/config.json",
   "plugins": [
     {
-      "package": "opencode-webfetchmd",
+      "package": "@san-kit/opencode-webfetchmd",
       "options": { "history": false },
     },
   ],
@@ -184,7 +184,7 @@ Example:
   "$schema": "https://opencode.ai/config.json",
   "plugins": [
     {
-      "package": "opencode-webfetchmd",
+      "package": "@san-kit/opencode-webfetchmd",
       "options": {
         "history": true,
         "historyPath": "/Users/me/opencode-logs/webfetchmd",

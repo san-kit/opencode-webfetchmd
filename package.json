@@ -1,5 +1,5 @@
 {
-  "name": "opencode-webfetchmd",
+  "name": "@san-kit/opencode-webfetchmd",
   "version": "1.0.0",
   "description": "Readable Markdown web fetching for OpenCode V2 using Zyte, with built-in credential onboarding.",
   "type": "module",
