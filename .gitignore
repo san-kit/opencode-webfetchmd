@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.tgz
+.DS_Store
+*.log
+
+# Local plugin history
+search-history/
+webfetch-history/
+
+# Secrets
+.env
+.env.*
+!.env.example
